@@ -1,3 +1,13 @@
+body {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 img {
     object-fit: fill;
@@ -10,11 +20,11 @@ img {
     align-items: center;
     background-size: cover;
     background-position: top;
-    /* background-image: url(); */
 }
 
 .name {
     position: absolute;
     color: magenta;
 }
+
 
