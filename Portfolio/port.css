@@ -1,5 +1,11 @@
 body {
-    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: auto;
+    border: 5px solid transparent;
+    border-bottom: none;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
 
 main {
@@ -9,22 +15,66 @@ main {
     align-items: center;
 }
 
-img {
-    object-fit: fill;
+.header {
+    display: flex;
+    color: magenta;
+    height: 65vh;
+    background-image: url("https://imgur.com/ksDz1mk.png");
+    background-size: cover;
+    background-position: top;
+    background-position-y: -60px;
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-container {
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.tech {
+    display: flex;
+}
+
+.primary-tech {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    max-width: fit-content;
+}
+
+.secondary-tech {
+    display: flex;
+    max-width: fit-content;
+}
+
+.logos {
+    width: 100px;
+    height: 100px;
+}
+
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: top;
 }
 
-.name {
-    position: absolute;
-    color: magenta;
+.projects {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
+.project-1 {
+    grid-column: 1;
+}
 
