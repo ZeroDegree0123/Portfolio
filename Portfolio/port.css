@@ -16,30 +16,27 @@ main {
 }
 
 .header {
-    color: magenta;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 65vh;
     background-image: url("https://imgur.com/ksDz1mk.png");
-    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);    background-size: cover;
     background-position: top;
     background-position-y: -60px;
-    border-radius: 25px;
+    border-radius: 10px;
     padding-bottom: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
 .titles {
     color: rgb(236, 63, 86);
 }
 
-.titles-about {
-    color: white;
-}
 
 .name {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +48,7 @@ main {
     display: flex;
     width: 80%;
     justify-content: center;
+    /* clip-path: polygon(50% 32%, 0 54%, 100% 53%); */
 }
 
 .primary-tech {
@@ -62,7 +60,7 @@ main {
 .logos {
     width: 100px;
     height: 100px;
-    margin: 35px;
+    margin: 25px;
 }
 
 .about {
@@ -70,10 +68,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
     margin-bottom: 70px;
     background-color: rgb(236, 63, 86);
-    border-radius: 15px;
+    border-radius: 5px;
+    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.titles-about {
+    color: rgb(236, 63, 86);
+    height: 0;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .about-intro {
@@ -103,10 +108,18 @@ main {
     transition: 0.3s;
     border-radius: 5px;
     margin: 10px;
+    width: 400px;
+    /* perspective: 150rem;
+    -webkit-perspective: 150rem; */
 }
 
 .project-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+     width: 400px;
+     height: 200px;
 }
 
 .footer {
@@ -114,5 +127,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    background-color: rgb(236, 63, 86);
 }
 
