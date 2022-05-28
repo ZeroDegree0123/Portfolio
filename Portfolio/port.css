@@ -44,20 +44,25 @@ main {
     padding: 0;
 }
 
-.tech {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    /* clip-path: polygon(50% 32%, 0 54%, 100% 53%); */
+.tech-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .primary-tech {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
+.secondary-tech {
+   border-left: 2px solid;
+}
+
 .logos {
+    align-items: flex-end;
     width: 100px;
     height: 100px;
     margin: 25px;
