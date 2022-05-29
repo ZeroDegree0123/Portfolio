@@ -19,6 +19,10 @@ h4 {
     color:rgb(180, 47, 65);
 }
 
+hr {
+    background-color: rgb(180, 47, 65);
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -69,7 +73,7 @@ h4 {
 }
 
 .secondary-tech {
-   border-left: 2px solid;
+   border-left: 2px solid rgb(180, 47, 65);
 }
 
 .logos {
@@ -100,6 +104,7 @@ h4 {
 .about-intro {
     color: white;
     font-size: 18px;
+    margin-top: 70px;
 }
 
 .about-body  {
@@ -107,6 +112,7 @@ h4 {
     width: 80%;
     text-align: center;
     font-size: 18px;
+    margin-bottom: 70px;
 }
 
 
