@@ -154,6 +154,52 @@ hr {
     text-align: center;
 }
 
+.collapsible {
+    color: rgb(180, 47, 65);
+    text-decoration: underline;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    text-align: left;
+    padding: 0 18px;
+    background-color: rgb(180, 47, 65);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.card-body {
+    text-align: center;
+    color: white;
+}
+
+.card-links {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card-individual-links {
+    text-decoration: none;
+    font-weight: bold;
+    color: #8ab7f9;
+}
+
 .card-tech {
     color: rgb(180, 47, 65);
     display: flex;
