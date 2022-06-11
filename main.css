@@ -23,6 +23,8 @@ hr {
     background-color: rgb(180, 47, 65);
 }
 
+
+
 .header {
     display: flex;
     justify-content: center;
@@ -153,6 +155,13 @@ hr {
     text-align: center;
 }
 
+.click {
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    text-decoration: none;
+}
+
 .collapsible {
     color: rgb(180, 47, 65);
     text-decoration: underline;
@@ -235,5 +244,16 @@ hr {
     text-decoration: underline;
 }
 
-
+@media screen and (min-width: 500px) {
+    .logos {
+        width: 45px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .logos {
+        width: 75px;
+        height: 75px;
+    }
+}
 
