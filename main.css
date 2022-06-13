@@ -241,6 +241,7 @@ hr {
 }
 
 .social-links:hover {
+    color: #8ab7f9;
     text-decoration: underline;
 }
 
