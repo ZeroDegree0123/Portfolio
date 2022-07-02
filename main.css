@@ -191,7 +191,7 @@ hr {
 }
 
 .spacer {
-    opacity: 0;
+    visibility: hidden;
 }
 
 .card-body {
