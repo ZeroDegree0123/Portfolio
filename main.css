@@ -190,6 +190,10 @@ hr {
     transition: max-height 0.2s ease-out;
 }
 
+.spacer {
+    opacity: 0;
+}
+
 .card-body {
     text-align: center;
     color: white;
@@ -243,6 +247,10 @@ hr {
 .social-links:hover {
     color: #8ab7f9;
     text-decoration: underline;
+}
+
+#simon-says-button {
+    padding: 12px;
 }
 
 @media screen and (min-width: 500px) {
