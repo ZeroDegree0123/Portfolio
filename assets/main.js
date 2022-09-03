@@ -14,3 +14,33 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+const portLinkEl = document.getElementById("top-circle").firstChild
+const resumeLinkEl = document.getElementById("bottom-circle").firstChild
+let open = true;
+
+// function slideOpen(evt) {
+//     evt.target.innerText = "< / > Portfolio"
+// }
+
+// function slideClose(evt) {
+//   evt.target.innerText = "< / >"
+// }
+
+portLinkEl.addEventListener("mouseover", evt => {
+  evt.target.innerText = "< / > Portfolio"
+})
+
+portLinkEl.addEventListener("mouseleave", evt => {
+  evt.target.innerText = "< / >"
+})
+
+// resumeLinkEl.addEventListener("mouseover", evt => {
+//   evt.target.innerText = "📄 Resume";
+// })
+
+// resumeLinkEl.addEventListener("mouseleave", evt => {
+//   evt.target.innerText = "📄"
+// })
+
+// portLinkEl.addEventListener("mouseover", slideOpen())
+// portLinkEl.addEventListener("mouseleave", slideClose())
