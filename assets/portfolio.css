@@ -252,7 +252,22 @@ hr {
     padding: 12px;
 }
 
-@media screen and (min-width: 500px) {
+#html-logo {
+    width: 69px;
+    height: 69px;
+    margin-bottom: 28px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .logos {
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
     .logos {
         width: 45px;
         height: 50px;
@@ -271,11 +286,9 @@ hr {
     .titles-about {
         margin-top: 100px;
     }
-}
-@media screen and (min-width: 900px) {
-    .logos {
-        width: 75px;
-        height: 75px;
+
+    #html-logo {
+        width: 40px;
+        height: 45px;
     }
 }
-

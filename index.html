@@ -4,165 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0P1H45VDRZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-0P1H45VDRZ');
-    </script>
+    <link rel="stylesheet" href="./assets/main.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <main>
-        <section class="header">
-            <div class="name">
-                <h2 class="header-text">ZACHARY VASQUEZ</h2>
-                <h3 class="header-text">SOFTWARE ENGINEER</h3>
+    <main class="main-container">
+
+        <!-- === main content === -->
+        <section class="center-container">
+            <div class="center-titles-container">
+                <h1 class="center-title">ZacharyVasquez</h1>
+                <h3 class="center-subtitle">always striving to ...</h3>
+            </div>
+            <div class="center-link-container">
+                <a class="center-links" href="">GitHub</a>
+                <a id="linkedin-link" class="center-links" href="">LinkedIn</a>
             </div>
         </section>
-        <h1 class="titles">TECHNOLOGIES</h1>
-        <div class="tech-container">
-            <div class="primary-tech">
-                <h4>PRIMARY KNOWLEDGE</h4>
-                <div class="image-container">
-                    <img id="html-logo" class="logos" src="https://imgur.com/BMyeeKL.png" alt="">
-                    <img class="logos" src="https://imgur.com/7WMG2QJ.png" alt="">
-                    <img class="logos" src="https://imgur.com/qNBsaUc.png" alt="">
-                    <img class="logos" src="https://imgur.com/f1QX3mP.png" alt="">
-                    <img class="logos" src="https://imgur.com/OFqWpiF.png" alt="">
-                    <img class="logos" src="https://imgur.com/dDKiG9c.png" alt="">
-                    <img class="logos" src="https://imgur.com/TiVUHuN.png" alt="">
-                </div>
+
+        <!-- === Side Bar === -->
+        <section class="sidebar-container">
+            <div>
+                <a class="sidebar-links" href="portfolio.html">Portfolio</a>
             </div>
-            <div class="secondary-tech">
-                <h4>WORKING KNOWLEDGE</h4>
-                <div class="image-container">
-                    <img class="logos" src="https://imgur.com/GIHtJ9l.png" alt="">
-                    <img class="logos" src="https://imgur.com/2ZvYycA.png" alt="">
-                </div>
+            <div>
+                <a class="sidebar-links" href="portfolio.html">Resume</a>
             </div>
-        </div>
-        <h1 class="titles-about">ABOUT ME</h1>
-        <div class="about">
-            <h1 >ABOUT ME</h1>
-            <p class="about-intro">Hi I'm Zach! I'm a Software Engineer currently living in Vancouver, WA.</p>
-            <p class="about-body">
-                I have spent the majority of my life in Washington, but wouldn't mind relocating. I started my
-                education at Central Washington university to study medicine, but later left to pursue a different career path. I worked in between jobs
-                for about 2 years until I was introduced to programming. I gained a big interest in the field of coding and began learning
-                on my own through free online courses and watching tutorials on YouTube. I found that I really enjoyed the content I was learning,
-                and not too soon after I took the initiative to attend a coding bootcamp called General Assembly. I finished the course and felt even 
-                more confident with having coding as a career. I have big ambitions being a programmer and wish to learn as much as I can.
-                I currently have an interest in design, but I don't mind working back-end.
-            </p>
-        </div>
-        <h1 class="titles">PROJECTS</h1>
-        <div class="cards">      
-            <div class="project-card">
-                <img class="card-image" src="https://imgur.com/abah0Bj.png" alt="">
-                <button type="button" id="simon-says-button" class="collapsible">Simon Says <span class="click">(Click Here)</span> </button>
-                <div class="content">
-                    <p class="card-body">
-                        This game displays a set of colors by a computer and the players 
-                        objective is to mimic and select the same colors the computer does. 
-                        If the player does not follow the correct sequence as the computer,
-                        then the player fails.
-                    </p>
-                    <div class="card-links">
-                        <a class="card-individual-links" href="https://github.com/ZeroDegree0123/SimonSays" target="_blank">Source Code</a>
-                        <a class="card-individual-links" href="https://zerodegree0123.github.io/SimonSays/" target="_blank">Deployed App</a>
-                    </div>
-                </div>
-                <div class="card-tech">
-                    <p class="card-left-tech">JavaScript</p>
-                    <hr>
-                    <p>CSS</p>
-                    <hr>
-                    <p class="card-right-tech">HTML</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img class="card-image" src="https://imgur.com/WjYGexH.png" alt="">
-                <button type="button" class="collapsible">Vasquez Farms</button>
-                <div class="content">
-                    <p class="card-body">
-                        This is an ecommerce app where you can buy soaps. Users can add soaps 
-                        to a cart then confirm their order. Every order is kept on record and 
-                        users are able to view their past orders.
-                        <br>
-                        <span class="spacer">--------------------------------------------------</span> 
-                    </p>
-                    <div class="card-links">
-                        <a class="card-individual-links" href="https://github.com/ZeroDegree0123/VasquezFarms" target="_blank">Source Code</a>
-                        <a class="card-individual-links" href="https://vasquez-farms.herokuapp.com/" target="_blank">Deployed App</a>
-                    </div>
-                </div>
-                <div class="card-tech">
-                    <p class="card-left-tech">MongoDB</p>
-                    <hr>
-                    <p>React</p>
-                    <hr>
-                    <p class="card-right-tech">NodeJs</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img class="card-image" src="https://imgur.com/r00juxL.png" alt="">
-                <button type="button" class="collapsible">Zach's Burgers</button>
-                <div class="content">
-                    <p class="card-body">
-                        A primarily front-end website made to showcase my front-end skills.
-                        This website is based off a restaurant theme and imitates a real restaurant 
-                        site. The site contains a full menu, rewards page, user sign in and
-                        a few other cool features. Enjoy!
-                    </p>
-                    <div class="card-links">
-                        <a class="card-individual-links" href="https://github.com/ZeroDegree0123/restaurant" target="_blank">Source Code</a>
-                        <a class="card-individual-links" href="https://zachs-burgers.herokuapp.com/" target="_blank">Deployed App</a>
-                    </div>
-                </div>
-                <div class="card-tech">
-                    <p class="card-left-tech">MongoDB</p>
-                    <hr>
-                    <p>React</p>
-                    <hr>
-                    <p class="card-right-tech">NodeJs</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img id="meeseeks-img" class="card-image" src="https://imgur.com/5Et6ayc.png" alt="">
-                <button type="button" class="collapsible">DJmeeseeks</button>
-                <div id="game-content" class="content">
-                    <p class="card-body">
-                        DJmeeseeks is a discord bot that allows members of a discord server
-                        to play music while in a discord voice channel. The bot contains all 
-                        the essential commands for all your musical needs. 
-                        <br>
-                        <span class="spacer">--------------------------------------------------</span> 
-                    </p>
-                    <div class="card-links">
-                        <a class="card-individual-links" href="https://github.com/ZeroDegree0123/DiscordBot" target="_blank">Source Code</a>
-                        <!-- <a class="card-individual-links" href="https://game-insider-plus.herokuapp.com" target="_blank">Deployed App</a> -->
-                    </div>
-                </div>
-                <div class="card-tech">
-                    <p class="card-left-tech">JavaScript</p>
-                    <hr>
-                    <p>NodeJs</p>
-                    <hr>
-                    <p class="card-right-tech">DiscordAPI</p>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <a class="social-links" href="https://www.linkedin.com/in/zacharymvasquez/" target="_blank">LinkedIn</a>
-            <a class="social-links" href="https://drive.google.com/file/d/1Ic-EFavsWLHsMCpvqK5PIfBNHZc_NVBc/view?usp=sharing" target="_blank">Resume</a>
-            <a class="social-links" href="mailto:zachary.vasquez.w@gmail.com" target="_blank">Email</a>
-            <a class="social-links" href="https://github.com/ZeroDegree0123" target="_blank">GitHub</a>
-        </footer>
+        </section>
     </main>
-    <script src="main.js"></script>
+    <script src="./assets/main.js"></script>
 </body>
 </html>

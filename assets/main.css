@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: "a b b b b";
+    background: linear-gradient(90deg, rgba(180, 47, 65, 0.25),  rgba(180, 47, 65, 0.25)),
+                url(https://imgur.com/nDjUOgq.png) no-repeat center center / cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.center-container {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.center-title {
+    font-size: 60px;
+    text-shadow: 1px 2px black;
+    margin: 5px 0 0 0;
+}
+
+.center-subtitle {
+    font-size: 24px;
+    text-shadow: 1px 2px black;
+    margin: 5px 0 25px 0;
+    padding-left: 5px;
+}
+
+.center-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center-links {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-container {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-links {
+    text-decoration: none;
+    color: white
+}
+
+#linkedin-link {
+    padding-left: 20px;
+}
