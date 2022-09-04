@@ -14,33 +14,17 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const portLinkEl = document.getElementById("top-circle").firstChild
-const resumeLinkEl = document.getElementById("bottom-circle").firstChild
-let open = true;
 
-// function slideOpen(evt) {
-//     evt.target.innerText = "< / > Portfolio"
-// }
+// const linkEls = document.querySelectorAll("a.sidebar-links")
+// const test = document.getElementById("port-link")
 
-// function slideClose(evt) {
-//   evt.target.innerText = "< / >"
-// }
-
-portLinkEl.addEventListener("mouseover", evt => {
-  evt.target.innerText = "< / > Portfolio"
-})
-
-portLinkEl.addEventListener("mouseleave", evt => {
-  evt.target.innerText = "< / >"
-})
-
-// resumeLinkEl.addEventListener("mouseover", evt => {
-//   evt.target.innerText = "📄 Resume";
+// test.addEventListener("mouseover", evt => {
+//   evt.target.classList.add("active")
 // })
 
-// resumeLinkEl.addEventListener("mouseleave", evt => {
-//   evt.target.innerText = "📄"
+// linkEls.forEach(element => {
+//   element.addEventListener('mouseover', evt => {
+//     evt.target.classList.add("active")
+//   })
 // })
-
-// portLinkEl.addEventListener("mouseover", slideOpen())
-// portLinkEl.addEventListener("mouseleave", slideClose())
+// console.log(linkEls)
