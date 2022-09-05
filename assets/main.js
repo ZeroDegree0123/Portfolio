@@ -13,18 +13,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-
-// const linkEls = document.querySelectorAll("a.sidebar-links")
-// const test = document.getElementById("port-link")
-
-// test.addEventListener("mouseover", evt => {
-//   evt.target.classList.add("active")
-// })
-
-// linkEls.forEach(element => {
-//   element.addEventListener('mouseover', evt => {
-//     evt.target.classList.add("active")
-//   })
-// })
-// console.log(linkEls)
