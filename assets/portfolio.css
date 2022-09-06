@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -54,7 +58,7 @@ hr {
 }
 
 .nav-links:hover {
-    background-color: rgba(24, 203, 223, 0.8);
+    background-color: rgba(180, 47, 65, 0.8);
 }
 
 .nav-links:hover > span {
@@ -233,7 +237,7 @@ hr {
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: rgba(180, 47, 65, 0.3);
 }
 
 .content {
@@ -285,29 +289,39 @@ hr {
 }
 
 .tech-container {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 50px;
     margin-bottom: 80px;
 }
 
-.primary-tech {
-    margin-right: 40px;
+.tech-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.secondary-tech {
-   border-left: 2px solid rgb(180, 47, 65);
+.tech-image-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    width: 120px;
 }
 
-.logos {
-    align-items: flex-end;
-    width: 75px;
-    height: 75px;
-    margin: 25px;
+.svgs {
+    width: 80px;
+    height: 80px;
 }
 
+.logo-titles {
+    font-size: 25px;
+}
 
 .footer {
     display: flex;
@@ -333,43 +347,25 @@ hr {
     padding: 12px;
 }
 
-#html-logo {
-    width: 69px;
-    height: 69px;
-    margin-bottom: 28px;
-}
 
 
-@media screen and (max-width: 900px) {
-    .logos {
-        width: 75px;
-        height: 75px;
+@media screen and (max-width: 1100px) {
+    .header-text {
+        text-align: center;
+        font-size: 50px;
     }
-
-}
-
-@media screen and (max-width: 500px) {
-    .logos {
-        width: 45px;
-        height: 50px;
+    
+    .nav-links {
+        display: none;
     }
-
-    .about {
-        clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    
+    .about-container {
+        flex-direction: column;
     }
-
-    .about-intro {
-        margin-top: 0;
-        padding: 10px;
-        padding-top: 40px;
-    }
-
-    .titles-about {
-        margin-top: 100px;
-    }
-
-    #html-logo {
-        width: 40px;
-        height: 45px;
+    
+    .tech-image-containers {
+        margin: 20px;
     }
 }
+
+
