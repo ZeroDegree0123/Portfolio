@@ -135,6 +135,12 @@ body {
      100% {width: 150px; background-color: rgba(24, 203, 223, 0.8);}
 } */
 
+@media screen and (max-width: 1000px) {
+    .center-container {
+        max-width: 500px;
+        margin: 0;
+    }   
+}
 
 @media screen and (max-width: 800px) {
     .gradient {
@@ -173,8 +179,9 @@ body {
     .sidebar-links {
         display: flex;
         flex-direction: row;
-        font-size: 20px;
-        width: 120px;
+        font-size: 16px;
+        width: 100px;
+        height: 55px;
     }
 
     .sidebar-links:hover {
@@ -187,10 +194,10 @@ body {
     }
 
     #port-link {
-        margin: 10px;
+        margin: 15px;
     }
 
     #resume-link {
-        margin: 10px;
+        margin: 15px;
     }
 }
