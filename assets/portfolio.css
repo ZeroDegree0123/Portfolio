@@ -381,7 +381,23 @@ hr {
     padding: 12px;
 }
 
+@media screen and (min-width: 1800px) {
+    .project-card {
+        width: 550px;
+        height: 450px;
+        margin: 80px;
+    }
 
+    .card-image {
+        width: 550px;
+        height: 310px;
+    }
+
+    .content {
+        min-height: 140px;
+        max-height: 140px;
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .header-text {
