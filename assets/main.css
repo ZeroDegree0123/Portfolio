@@ -134,3 +134,63 @@ body {
 /* @keyframes slide {
      100% {width: 150px; background-color: rgba(24, 203, 223, 0.8);}
 } */
+
+
+@media screen and (max-width: 800px) {
+    .gradient {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-container {
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        margin: 0;
+        margin-top: 250px;
+    }
+
+    .center-titles-container {
+        text-align: center;
+    }
+
+    .center-title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .center-links {
+        text-align: center;
+    }
+
+    .sidebar-container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .sidebar-links {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        width: 120px;
+    }
+
+    .sidebar-links:hover {
+        background-color: rgba(24, 203, 223, 0.8);
+        width: 120px;
+    }
+
+    .sidebar-links > span { 
+        display: contents;
+    }
+
+    #port-link {
+        margin: 10px;
+    }
+
+    #resume-link {
+        margin: 10px;
+    }
+}
