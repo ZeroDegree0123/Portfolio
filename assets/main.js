@@ -11,10 +11,5 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
-  // if (this.classList === "active") {
-  //   coll[i].addEventListener("mouseleave", function() {
-  //     this.classList.remove("active");
-  //   })
-  // }
   });
 }
