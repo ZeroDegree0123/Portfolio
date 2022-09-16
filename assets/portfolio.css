@@ -251,6 +251,7 @@ hr {
 
 .spacer {
     visibility: hidden;
+    
 }
 
 .card-body {
@@ -393,9 +394,8 @@ hr {
         height: 310px;
     }
 
-    .content {
+    .active > .content {
         min-height: 140px;
-        max-height: 140px;
     }
 }
 
