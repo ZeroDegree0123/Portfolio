@@ -1,15 +1,34 @@
-// card slid down
-const coll = document.getElementsByClassName("collapsible");
-let i;
+// PROJECT CARD HOVER ANIMATION
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
+
+// Selectors
+const topCard = document.querySelectorAll("div.top-card")
+
+// Event listeners
+topCard.forEach(elements => {
+  const links = document.querySelectorAll("a.card-individual-links")
+  const children = document.querySelectorAll("img.card-image, h1.card-title")
+
+  elements.addEventListener('mouseover', evt => {
+      let card = evt.target;
+
+      card.style.opacity = "0";
+
+      children.forEach(elements => {
+        if (card.children === elements) {
+          elements.style.opacity = "0"
+        } else return;
+      })
+  })
+  elements.addEventListener('mouseleave', evt => {
+      let card = evt.target;
+
+      card.style.opacity = "100";
+
+      children.forEach(elements => {
+        elements.style.opacity = "100"
+      })
+  })
+})
+
+
