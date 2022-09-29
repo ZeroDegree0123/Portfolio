@@ -1,6 +1,57 @@
-// PROJECT CARD HOVER ANIMATION
+//// //// //// MAIN PAGE BUTTON ANIMATION
 
+// Selectors 
+const sideButtons = document.querySelectorAll("a.sidebar-links")
+const buttonContent = document.querySelectorAll("span.button-content")
 
+const resumeLink = document.getElementById("resume-link")
+const portLink = document.getElementById("port-link")
+
+const button1 = document.getElementById("button-1")
+const button2 = document.getElementById("button-2")
+
+// helper function
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+// Event listeners
+portLink.addEventListener("mouseover", evt => {
+  let button = evt.target;
+
+  button.style.width = "150px"
+
+  delay(200).then(() => {
+    button1.style.visibility = "visible"
+    button1.style.position = "initial"
+  })
+})
+
+resumeLink.addEventListener("mouseover", evt => {
+  let button = evt.target;
+
+  button.style.width = "150px"
+
+  delay(200).then(() => {
+    button2.style.visibility = "visible"
+    button2.style.position = "initial"
+  })
+})
+sideButtons.forEach(elements => {
+
+  elements.addEventListener("mouseleave", evt => {
+    let button = evt.target;
+
+    button.style.width = "70px";
+
+    buttonContent.forEach(elements => {
+      elements.style.visibility = "hidden"
+      elements.style.position = "absolute"
+    })
+  })
+})
+
+//// //// //// PROJECT CARD HOVER ANIMATION
 // Selectors
 const topCards = document.querySelectorAll("div.top-card")
 const bottomCards = document.querySelectorAll("div.bottom-card")

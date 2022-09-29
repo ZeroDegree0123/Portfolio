@@ -95,24 +95,18 @@ body {
     height: 70px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* .sidebar-links:hover {
-    animation: slide .5s ease forwards;
-} */
-
-.sidebar-links:hover {
-    width: 150px;
-    transition: .5s;
+    transition: width .4s;
 }
 
 .sidebar-links > span { 
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
 }
 
-.sidebar-links:hover > span { 
-    display: contents;
-}
+/* .sidebar-links:hover > span { 
+    animation: display .1s ;
+} */
 
 #port-link {
     margin-bottom: 50px;
