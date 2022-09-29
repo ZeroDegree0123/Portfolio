@@ -241,35 +241,41 @@ hr {
     transition: .5s;
 }
 
-
 .top-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 400px;
     position: absolute;
     background-color: var(--primary);
     border-radius: 5px;
-    transition: opacity .5s;
+    transition: visibility .9s;
+    transition: opacity .8s;
     z-index: 1000;
 }
 
 .card-image {
-    width: 500.5px;
+    width: 500px;
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    clip-path: polygon(100% 0, 100% 100%, 50% 93%, 0 100%, 0 0);
+    /* clip-path: polygon(100% 0, 100% 100%, 50% 93%, 0 100%, 0 0); */
     transition: opacity .8s;
     pointer-events: none;
     z-index: -1;
 }
 
 .card-title {
-    text-align: center;
     font-size: 35px;
+    text-align: center;
     color: white;
     transition: opacity .8s;
     pointer-events: none;
-    margin: 0;
+    border: 2px solid white;
+    margin: 5px;
+    width: 70%
 } 
 
 .bottom-card {
@@ -289,42 +295,51 @@ hr {
 }
 
 .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 24px;
     color: white;
-    text-align: center;
     border: 2px solid white;
+    min-height: 178px;
     margin: 20px;
-    margin-bottom: 60px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card-tech-title {
     font-size: 24px;
+    text-decoration: underline;
     color: white;
-    margin: 10px
+    margin: 10px;
 }
 
 .card-tech {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
-    width: 80%;
+    width: 70%;
 }
 
 .card-links {
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 20px;
     width: 80%;
 }
 
 .card-individual-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-weight: bold;
     color: #8ab7f9;
 }
+
+
 
 /* --------------------------------
 # Technologies
@@ -426,6 +441,15 @@ hr {
 # Media 
 -------------------------------- */
 @media screen and (min-width: 1800px) {
+    .project-container {
+        width: 90%;
+        margin: 0;
+    }
+
+    .project-card {
+        margin: 80px 125px;
+    }
+
     .top-card {
         width: 550px;
         height: 450px;
@@ -438,12 +462,12 @@ hr {
 
     .card-image {
         width: 550.5px;
-        height: 310px;
+        height: 370px;
     }
 
     .card-title {
         font-size: 40px;
-        padding-top: 30px;
+        padding: 10px;
     }
 
 }
