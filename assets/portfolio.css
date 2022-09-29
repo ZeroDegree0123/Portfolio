@@ -238,7 +238,7 @@ hr {
 
 .project-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-    transition: .5s;
+    transition: .4s;
 }
 
 .top-card {
@@ -251,8 +251,7 @@ hr {
     position: absolute;
     background-color: var(--primary);
     border-radius: 5px;
-    transition: visibility .9s;
-    transition: opacity .8s;
+    transition: opacity .3s;
     z-index: 1000;
 }
 
