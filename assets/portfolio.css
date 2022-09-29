@@ -231,7 +231,7 @@ hr {
     border-radius: 5px;
     margin: 70px 50px;
     width: 500px;
-    min-height: 400px;
+    height: 400px;
     transition: opacity .8s;
 }
 
@@ -246,7 +246,7 @@ hr {
     justify-content: center;
     align-items: center;
     width: 500px;
-    max-height: 400px;
+    height: 400px;
     position: absolute;
     background-color: var(--primary);
     border-radius: 5px;
@@ -283,7 +283,7 @@ hr {
     border-radius: 5px;
     background-color: var(--secondary);
     width: 500px;
-    min-height: 400px;
+    height: 400px;
 }
 
 .spacer {
@@ -437,7 +437,7 @@ hr {
 /* --------------------------------
 # Media 
 -------------------------------- */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     .project-container {
         width: 90%;
         margin: 0;
@@ -458,7 +458,7 @@ hr {
     }
 
     .card-image {
-        width: 550.5px;
+        width: 550px;
         height: 370px;
     }
 
