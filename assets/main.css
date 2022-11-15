@@ -104,6 +104,9 @@ body {
     pointer-events: none;
 }
 
+.sidebar-links-sm {
+    display: none;
+}
 /* .sidebar-links:hover > span { 
     animation: display .1s ;
 } */
@@ -171,27 +174,22 @@ body {
     }
 
     .sidebar-links {
+        display: none;
+    }
+
+    .sidebar-links-sm {
         display: flex;
-        flex-direction: row;
-        font-size: 16px;
-        width: 100px;
-        height: 55px;
-    }
-
-    .sidebar-links:hover {
-        background-color: rgba(24, 203, 223, 0.8);
-        width: 120px;
-    }
-
-    .sidebar-links > span { 
-        display: contents;
-    }
-
-    #port-link {
-        margin: 15px;
-    }
-
-    #resume-link {
-        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: width .4s;
+        margin: 0 20px;
     }
 }

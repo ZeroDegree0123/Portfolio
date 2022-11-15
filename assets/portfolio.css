@@ -496,4 +496,48 @@ hr {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .about-subcontainer > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-body-container {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .occupation {
+        margin: 0;
+    }
+    
+    .titles {
+        margin: 0;
+    }
+
+    .project-card {
+        margin: 30px 10px;
+        width: 450px;
+        height: 350px;
+    }
+
+    .top-card {
+        width: 450px;
+        height: 350px;
+    }
+
+    .bottom-card {
+        width: 450px;
+        height: 350px;
+    }
+
+    .card-image {
+        width: 450px;
+    }
+
+    .card-body {
+        margin: 0;
+    }
+}
 
