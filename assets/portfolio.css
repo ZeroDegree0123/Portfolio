@@ -497,6 +497,11 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
+    .header-container {
+        margin: 0;
+        padding: 0;
+    }
+
     .about-container {
         margin: 40px 10px;
     }
@@ -559,4 +564,3 @@ hr {
         font-size: 12px;
     }
 }
-
