@@ -536,24 +536,28 @@ hr {
         margin: 0;
     }
 
+    .project-container {
+        margin: 0;
+    }
+
     .project-card {
         margin: 30px 10px;
-        width: 450px;
+        width: 400px;
         height: 350px;
     }
 
     .top-card {
-        width: 450px;
+        width: 400px;
         height: 390px;
     }
 
     .bottom-card {
-        width: 450px;
+        width: 400px;
         height: 390px;
     }
 
     .card-image {
-        width: 450px;
+        width: 400px;
     }
 
     .card-body {
