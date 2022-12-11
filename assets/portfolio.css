@@ -568,3 +568,17 @@ hr {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .tech-image-containers {
+        width: 100px;
+    }
+
+    .svgs {
+        width: 40px;
+    }
+
+    .copyright-container > p {
+        text-align: center;
+    }
+}

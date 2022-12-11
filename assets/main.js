@@ -18,6 +18,9 @@ const portLink = document.getElementById("port-link");
 const button1 = document.getElementById("button-1");
 const button2 = document.getElementById("button-2");
 
+const page = document.getElementById("main.page-container")
+const windowWidth = window.innerWidth;
+console.log(windowWidth)
 
 // EVENT LISTENERS
 
@@ -69,13 +72,24 @@ sideButtons.forEach(elements => {
 const topCards = document.querySelectorAll("div.top-card");
 const bottomCards = document.querySelectorAll("div.bottom-card");
 
+// HELPER FUNCTIONS
+// function resize() {
+//   topCards.forEach(elements => {
+//     if (windowWidth < 600) {
+//       elements.style.visibility = "hidden"
+//     }
+//   })
+// }
+// resize();
+
 // EVENT LISTENERS
 topCards.forEach(elements => {
   // Hover event
-  elements.addEventListener('mouseover', evt => {
+  
+  elements.addEventListener("mouseover", evt => {
     let card = evt.target;
     card.style.opacity = "0";
-
+    
     if (card.style.opacity === "0") {
       delay(400).then(() => {
         card.style.visibility = "hidden";
@@ -85,13 +99,32 @@ topCards.forEach(elements => {
 });
 // Mouse leave event
 bottomCards.forEach(elements => {
-  elements.addEventListener("mouseleave", evt => {
-    topCards.forEach(elements => {
-
-      elements.style.opacity = "100";
-      elements.style.visibility = "visible";
-
+    elements.addEventListener("mouseleave", evt => {
+      topCards.forEach(elements => {
+  
+        elements.style.opacity = "100";
+        elements.style.visibility = "visible";
+  
+      })
     })
-  })
 });
 
+// if (windowWidth < 600) {
+    //   elements.style.visibility = "hidden"
+    // } else {
+      //   elements.style.visibility = "visible"
+      // }
+
+  // elements.addEventListener('resize', evt => {
+
+  //     elements.style.visibility = "hidden"
+  //   } else {
+  //     elements.style.visibility = "visible"
+  //   }
+  // })
+
+// page.addEventListener("resize", evt => {
+//   if (windowWidth < 600) {
+
+//   }
+// })
