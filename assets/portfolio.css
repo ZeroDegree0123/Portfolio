@@ -214,7 +214,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 50px 80px;
+    margin: 50px 0;
     margin-top: 0;
     width: 100%;
 }
@@ -570,6 +570,10 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+    .about-body {
+        font-size: 18px;
+    }
+
     .tech-image-containers {
         width: 100px;
     }
