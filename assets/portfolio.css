@@ -108,7 +108,7 @@ hr {
 }
 
 .titles {
-    font-size: 40px;
+    font-size: 45px;
     color: rgb(180, 47, 65);
     margin: 50px;
 }
@@ -120,14 +120,11 @@ hr {
     align-items: center;
     color: white;
     text-shadow: 1px 1px rgba(180, 47, 65, 0.3);
-    border-radius: 10px;
-    font-size: 50px;
-    padding: 0;
 }
 
 .header-text {
-    text-decoration: none;
     margin: 10px;
+    font-size: 55px;
 }
 
 /* --------------------------------
@@ -212,11 +209,16 @@ hr {
 .project-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 .project-type-title {
-    margin-left: 150px;
+    color: #45505b;
+    font-size: 35px;
+    margin: 30px;
+    padding: 0 20px;
+    border-bottom: solid 2px #45505b;
 }
 
 .project-cards-container {
