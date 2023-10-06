@@ -85,7 +85,7 @@ hr {
     background-color: rgba(180, 47, 65, 0.8);
 }
 
-.nav-links:hover > span {
+.nav-links:hover>span {
     display: contents;
 }
 
@@ -102,7 +102,7 @@ hr {
     width: 100%;
     height: 100vh;
     background: linear-gradient(90deg, rgba(180, 47, 65, 0.35), rgba(180, 47, 65, 0.35)),
-                url("https://imgur.com/mOPnT5t.png"); 
+        url("https://imgur.com/mOPnT5t.png");
     background-size: cover;
     background-position: top;
 }
@@ -125,6 +125,66 @@ hr {
 .header-text {
     margin: 10px;
     font-size: 55px;
+}
+
+.red-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.red-curve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 420px;
+}
+
+.red-curve .shape-fill {
+    fill: #FF0000;
+}
+
+.green-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.green-curve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 300px;
+}
+
+.green-curve .shape-fill {
+    fill: #1DB31D;
+}
+
+.blue-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.blue-curve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 180px;
+}
+
+.blue-curve .shape-fill {
+    fill: #0069FF;
 }
 
 /* --------------------------------
@@ -185,17 +245,17 @@ hr {
     width: 50%;
 }
 
-.about-links > span {
+.about-links>span {
     color: #45505b;
 }
 
-.about-links > a {
+.about-links>a {
     font-size: 16px;
     color: #8ab7f9;
     text-decoration: none;
 }
 
-.about-body  {
+.about-body {
     font-size: 20px;
     text-align: left;
     color: #45505b;
@@ -240,7 +300,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin: 70px 50px;
     width: 500px;
@@ -249,7 +309,7 @@ hr {
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transition: .4s;
 }
 
@@ -286,7 +346,7 @@ hr {
     border: 2px solid white;
     margin: 5px;
     width: 70%;
-} 
+}
 
 .bottom-card {
     display: flex;
@@ -301,7 +361,7 @@ hr {
 
 .spacer {
     visibility: hidden;
-    
+
 }
 
 .card-body {
@@ -413,13 +473,13 @@ hr {
     margin-bottom: 30px;
 }
 
-.footer-name-container > h1 {
+.footer-name-container>h1 {
     font-size: 45px;
     color: #cbcbcb;
     margin-bottom: 0;
 }
 
-.footer-name-container > p {
+.footer-name-container>p {
     font-style: italic;
     color: #cbcbcb;
 }
@@ -443,7 +503,7 @@ hr {
     color: #8ab7f9;
 }
 
-.copyright-container > p {
+.copyright-container>p {
     color: #cbcbcb;
 }
 
@@ -492,7 +552,7 @@ hr {
         text-align: center;
         font-size: 50px;
     }
-    
+
     .nav-links {
         display: none;
     }
@@ -508,7 +568,7 @@ hr {
     .about-body-container {
         margin-top: 15px;
     }
-    
+
     .tech-image-containers {
         margin: 20px;
     }
@@ -524,7 +584,7 @@ hr {
         margin: 40px 10px;
     }
 
-    .about-subcontainer > div {
+    .about-subcontainer>div {
         display: flex;
         justify-content: center;
     }
@@ -542,14 +602,14 @@ hr {
         width: 50%;
     }
 
-    .about-links > a {
+    .about-links>a {
         font-size: 14px;
     }
 
     .occupation {
         margin: 0;
     }
-    
+
     .titles {
         margin: 0;
     }
@@ -593,11 +653,11 @@ hr {
         width: 350px;
         font-size: 20px;
     }
-    
+
     .card-body {
         font-size: 20px;
     }
-    
+
     .tech-image-containers {
         width: 100px;
     }
@@ -606,7 +666,7 @@ hr {
         width: 40px;
     }
 
-    .copyright-container > p {
+    .copyright-container>p {
         text-align: center;
     }
 }
